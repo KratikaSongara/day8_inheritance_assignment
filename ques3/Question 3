@@ -1,0 +1,4 @@
+Dynamic polymorphism :-
+
+We can achieve dynamic polymorphism by method overriding. It is based on the concept of super class reference-child class object.
+In it, at compile time, we don't know which method will get called and it will be decided at runtime that which method will get executed.

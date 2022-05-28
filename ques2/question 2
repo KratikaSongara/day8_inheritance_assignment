@@ -1,0 +1,23 @@
+ClassCastException :-
+
+We can do downcasting of object only when thw child class object us referenced by super class variable.
+If we try to make same class object referenced by same class variable and try to do downcating of that object, then we get ClassCastException.
+
+Exanmple :-
+Suppose I have two classes :-
+i) Animal class
+ii) Dog class
+
+Now, Animal is my parent class and Dog is child class. So, to make super class reference with child class object, i need to write :-
+       Animal a = new Dog();
+
+Now, I can access all the members parent class, that is, Animal class and overriden methods of Child Class, that is, Dog class, with variable 'a'.
+But i want to access Child class variables also, then I need to downcast the object :-
+	  Dog d = (Dog)a;
+
+Now, with the help of variable 'd', i can access all methods of Child class, that is, Dog class.
+
+But suppose if i have :-
+     Animal a = new Animal();
+
+It is same class reference and same class variable and now if i try to downcast it, then I will get ClassCastException.
